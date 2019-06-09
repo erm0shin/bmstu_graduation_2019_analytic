@@ -43,6 +43,7 @@ plt.plot(df3.index, df3["Value"].values, marker="o", label="2018")
 plt.gcf().autofmt_xdate()
 plt.xlabel(u"Семестр")
 plt.ylabel(u"Успеваемость, %")
+plt.title(u"Успеваемость кафедры ИУ6 по предмету \"Информатика\"")
 plt.legend()
 
 plt.savefig('semester_stat.png')

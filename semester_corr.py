@@ -65,7 +65,7 @@ grid.map_lower(corr_func)
 grid.map_lower(sns.kdeplot, cmap=plt.cm.Reds)
 
 # Title for entire plot
-plt.suptitle(u"Успеваемость", size=20, y=1)
+plt.suptitle(u"Успеваемость кафедры ИУ6 по предмету \"Информатика\"", size=20, y=1)
 
 # plt.draw()
 plt.savefig('semester_corr.png')
