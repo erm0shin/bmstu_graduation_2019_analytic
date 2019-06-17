@@ -25,7 +25,7 @@ sns.set(font_scale=2)
 sns.set(style="ticks", color_codes=True)
 
 
-featuresClean = pd.read_csv('semester_corr.csv')
+featuresClean = pd.read_csv('semester_corr_attend.csv')
 features = featuresClean+0.00001*np.random.rand(8, 3)
 
 # Extract the columns to  plot
@@ -65,7 +65,7 @@ grid.map_lower(corr_func)
 grid.map_lower(sns.kdeplot, cmap=plt.cm.Reds)
 
 # Title for entire plot
-plt.suptitle(u"Успеваемость кафедры ИУ6 по предмету \"Информатика\"", size=20, y=1)
+plt.suptitle(u"Посещаемость кафедры ИУ6", size=20, y=1)
 
 # plt.draw()
-plt.savefig('semester_corr.png')
+plt.savefig('semester_corr_attend.png')
